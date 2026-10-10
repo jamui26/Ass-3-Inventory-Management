@@ -1,9 +1,7 @@
 const Product = require("../models/product");
 
 
-// ===============================
-// CREATE PRODUCT
-// ===============================
+
 const createProduct = async (req, res) => {
     try {
         const product = await Product.create(req.body);
@@ -23,10 +21,7 @@ const createProduct = async (req, res) => {
 };
 
 
-// ===============================
-// GET ALL PRODUCTS
-// Filtering + Sorting + Pagination
-// ===============================
+
 const getAllProducts = async (req, res) => {
     try {
 
@@ -89,9 +84,7 @@ const getAllProducts = async (req, res) => {
 };
 
 
-// ===============================
-// GET SINGLE PRODUCT
-// ===============================
+
 const getProductById = async (req, res) => {
     try {
 
@@ -118,9 +111,7 @@ const getProductById = async (req, res) => {
 };
 
 
-// ===============================
-// UPDATE PRODUCT
-// ===============================
+
 const updateProduct = async (req, res) => {
     try {
 
@@ -155,9 +146,7 @@ const updateProduct = async (req, res) => {
 };
 
 
-// ===============================
-// DELETE PRODUCT
-// ===============================
+
 const deleteProduct = async (req, res) => {
     try {
 
@@ -184,9 +173,7 @@ const deleteProduct = async (req, res) => {
 };
 
 
-// ===============================
-// ADJUST STOCK
-// ===============================
+
 const adjustStock = async (req, res) => {
     try {
 
@@ -255,9 +242,7 @@ const adjustStock = async (req, res) => {
 };
 
 
-// ===============================
-// LOW STOCK REPORT
-// ===============================
+
 const getLowStockProducts = async (req, res) => {
     try {
 
@@ -283,9 +268,6 @@ const getLowStockProducts = async (req, res) => {
 };
 
 
-// ===============================
-// CATEGORY-WISE INVENTORY SUMMARY
-// ===============================
 const getCategorySummary = async (req, res) => {
     try {
 
@@ -331,9 +313,7 @@ const getCategorySummary = async (req, res) => {
 };
 
 
-// ===============================
-// EXPORT ALL FUNCTIONS
-// ===============================
+
 module.exports = {
     createProduct,
     getAllProducts,
